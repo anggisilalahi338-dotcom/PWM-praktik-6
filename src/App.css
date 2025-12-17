@@ -5,134 +5,138 @@
     margin: 0 auto;
     padding: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f9;
+    color: #1f2933;
 }
 
-/* Lifecycle Demo Styles */
+/* ================= LIFECYCLE DEMO ================= */
 .lifecycle-demo {
-    background: #f8f9fa;
+    background: #ffffff;
     padding: 20px;
     border-radius: 18px;
     margin-bottom: 30px;
-    border-left: 4px solid #007bff;
+    border-left: 4px solid #2563eb;
 }
 
 .counter-section,
 .visibility-section {
     margin: 20px 0;
     padding: 15px;
-    background: white;
+    background: #f1f5f9;
     border-radius: 8px;
-    border: 1px solid #dee2e6;
+    border: 1px solid #cbd5e1;
+    color: #1f2933;
 }
 
 .message-box {
-    background: #e7f3ff;
+    background: #e0ecff;
+    color: #1e3a8a;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 6px;
     margin-top: 10px;
-    border-left: 4px solid #687bff;
+    border-left: 4px solid #2563eb;
 }
 
 .explanation {
-    background: #fff3cd;
+    background: #fff7ed;
+    color: #7c2d12;
     padding: 15px;
-    border-radius: 5px;
-    border: 1px solid #ffeaa7;
+    border-radius: 6px;
+    border: 1px solid #fed7aa;
 }
 
-/* Data Fetching Demo Styles */
+/* ================= DATA FETCHING DEMO ================= */
 .data-fetching-demo {
-    background: #f8f9fa;
+    background: #ffffff;
     padding: 20px;
     border-radius: 18px;
     margin-bottom: 30px;
-    border-left: 4px solid #28a745;
+    border-left: 4px solid #16a34a;
 }
 
 .loading {
     display: flex;
     align-items: center;
     gap: 10px;
-    background: #e7f3ff;
+    background: #e0f2fe;
+    color: #075985;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 6px;
     margin: 10px 0;
 }
 
 .spinner {
     width: 20px;
     height: 20px;
-    border: 2px solid #007bff;
-    border-top: 2px solid transparent;
+    border: 3px solid #2563eb;
+    border-top: 3px solid transparent;
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    to { transform: rotate(360deg); }
 }
 
 .error-message {
-    background: #f3d7da;
-    color: #721c24;
+    background: #fee2e2;
+    color: #7f1d1d;
     padding: 15px;
-    border-radius: 5px;
-    margin: 10px 0;
-    border: 1px solid #f5c6cb;
+    border-radius: 6px;
+    border: 1px solid #fecaca;
 }
 
+/* ================= USERS ================= */
 .users-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
+    gap: 12px;
     margin: 15px 0;
 }
 
 .user-card {
-    background: white;
+    background: #f8fafc;
+    color: #0f172a;
     padding: 15px;
     border-radius: 8px;
-    border: 2px solid #dee2e6;
+    border: 2px solid #cbd5e1;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .user-card:hover {
-    border-color: #907bff;
-    transform: translateY(-2px);
+    background: #e0ecff;
+    border-color: #2563eb;
 }
 
 .user-card.active {
-    border-color: #28a745;
-    background: #f9fff9;
+    background: #dcfce7;
+    border-color: #16a34a;
+    color: #065f46;
 }
 
 .user-detail-section {
     margin-top: 20px;
     padding: 20px;
-    background: white;
+    background: #ffffff;
     border-radius: 8px;
-    border: 1px solid #dee2e6;
-}
-
-.user-selector {
-    margin-bottom: 15px;
+    border: 1px solid #d1d5db;
 }
 
 .user-detail-card {
-    background: #f8f9fa;
+    background: #f0fdf4;
+    color: #065f46;
     padding: 15px;
-    border-radius: 5px;
-    border-left: 4px solid #28a745;
+    border-radius: 6px;
+    border-left: 4px solid #16a34a;
 }
 
-/* Dependencies Demo Styles */
+/* ================= DEPENDENCIES DEMO ================= */
 .dependencies-demo {
-    background: #f8f9fa;
+    background: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    border-left: 4px solid #ffc187;
+    border-left: 4px solid #f59e0b;
 }
 
 .controls {
@@ -141,82 +145,78 @@
     gap: 15px;
     margin: 20px 0;
     padding: 20px;
-    background: white;
+    background: #f1f5f9;
     border-radius: 8px;
-    border: 1px solid #dee2e6;
+    border: 1px solid #cbd5e1;
 }
 
 .control-group {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 6px;
+    color: #1f2933;
 }
 
 .text-input {
     padding: 8px 12px;
-    border: 2px solid #e9ecef;
-    border-radius: 5px;
+    border: 2px solid #2563eb;
+    border-radius: 6px;
     font-size: 14px;
+    color: #1f2933;
+    background: #ffffff;
 }
 
 .text-input:focus {
     outline: none;
-    border-color: #887bff;
+    border-color: #1d4ed8;
 }
 
-.logs-container {
-    margin-top: 20px;
-}
-
+/* ================= LOGS ================= */
 .logs {
     max-height: 300px;
     overflow-y: auto;
-    background: #203748;
-    color: #e2e8f0;
+    background: #0f172a;
+    color: #e5e7eb;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 6px;
     font-family: "Courier New", monospace;
     font-size: 14px;
 }
 
 .log-entry {
-    padding: 5px 0;
-    border-bottom: 1px solid #485568;
-}
-
-.log-entry:last-child {
-    border-bottom: none;
+    padding: 6px 0;
+    border-bottom: 1px solid #334155;
 }
 
 .log-count {
     text-align: center;
-    margin-top: 18px;
+    margin-top: 15px;
     font-style: italic;
-    color: #607576;
+    color: #475569;
 }
 
-/* Common Button Styles */
+/* ================= BUTTONS ================= */
 .btn {
     padding: 10px 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
     transition: all 0.3s ease;
 }
 
 .btn-primary {
-    background: #007bff;
+    background: #2563eb;
     color: white;
 }
 
 .btn-secondary {
-    background: #6c7570;
+    background: #64748b;
     color: white;
 }
 
 .btn-success {
-    background: #28a745;
+    background: #16a34a;
     color: white;
 }
 
@@ -225,12 +225,9 @@
     transform: translateY(-1px);
 }
 
-/* Responsive Design */
+/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
-    .controls {
-        grid-template-columns: 1fr;
-    }
-
+    .controls,
     .users-grid {
         grid-template-columns: 1fr;
     }
